@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      button:hover {
+        background-color: #3b82f6;
+        transition: background-color 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="bg-white py-8">
+      <div
+        class="container mx-auto flex justify-between items-center px-4 md:px-44"
+      >
+        <div class="flex items-center">
+          <span class="ml-3 text-xl font-bold text-gray-800"
+            >Ferdy Jonathan</span
+          >
+        </div>
+
+        <!-- Hamburger menu for mobile -->
+        <div class="md:hidden">
+          <button id="hamburger" class="focus:outline-none mr-4">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation links -->
+        <div id="menu" class="hidden md:flex space-x-11 text-lg">
+          <a
+            href="#home"
+            class="text-gray-600 hover:text-gray-900 font-semibold"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="text-gray-600 hover:text-gray-900 font-semibold"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-600 hover:text-gray-900 font-semibold"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-600 hover:text-gray-900 font-semibold"
+            >Contact</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-100 mt-2 rounded-lg shadow-lg"
+      >
+        <a
+          href="#home"
+          class="block px-4 py-2 text-gray-600 hover:text-gray-900"
+          >Home</a
+        >
+        <a
+          href="#about"
+          class="block px-4 py-2 text-gray-600 hover:text-gray-900"
+          >About</a
+        >
+        <a
+          href="#projects"
+          class="block px-4 py-2 text-gray-600 hover:text-gray-900"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="block px-4 py-2 text-gray-600 hover:text-gray-900"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="container mx-auto flex flex-col md:flex-row items-center justify-between py-36 w-1/2"
+    >
+      <div class="md:w-1/2 flex flex-col items-start space-y-6">
+        <h1 class="text-3xl md:text-4xl font-bold">Ferdy Jonathan Angwijaya</h1>
+        <h2 class="text-2xl text-gray-600">Student</h2>
+        <p class="text-gray-600">
+          Halo saya Ferdy Jonathan Angwijaya, seorang mahasiswa di Bina
+          Nusantara University dan mengambil jurusan Computer Science.
+        </p>
+
+        <div class="flex space-x-4">
+          <a
+            href="https://github.com/groofy10"
+            target="_blank"
+            class="btn-custom bg-black text-white hover:bg-gray-900 flex items-center gap-2"
+            ><i class="fab fa-github fa-lg"></i>GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/ferdy-jonathan-angwijaya-673714276/"
+            target="_blank"
+            class="btn-custom bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>LinkedIn</a
+          >
+        </div>
+      </div>
+
+      <div class="md:w-1/3 mt-10 md:mt-0 flex justify-center">
+        <img
+          src="Me.JPG"
+          alt="Your Photo"
+          class="h-64 w-64 rounded-full object-cover shadow-lg"
+        />
+      </div>
+    </section>
+
+    <section id="about" class="py-24 bg-gray-100">
+      <div class="container mx-auto px-4 md:px-44">
+        <h2
+          class="text-4xl font-bold text-gray-800 mb-8 text-center md:text-left"
+        >
+          About Me
+        </h2>
+        <p class="text-gray-600 mb-4 text-center md:text-left">
+          Halo, saya Ferdy Jonathan Angwijaya! Saat ini, saya adalah mahasiswa
+          di Binus University, mengambil jurusan Computer Science. Saya sedang
+          belajar web development dan sangat tertarik dengan dunia pengembangan
+          perangkat lunak, terutama di bagian backend.
+        </p>
+        <p class="text-gray-600 text-center md:text-left">
+          Saat ini, saya sedang fokus belajar menggunakan framework Laravel dan
+          Express.js untuk pengembangan web di bagian backend. Saya akan terus
+          berusaha mengembangkan keterampilan saya di kedua framework tersebut
+          agar semakin terbiasa dan mahir menggunakannya. Selain itu, saya juga
+          akan terus berusaha untuk berkembang dengan mempelajari framework dan
+          bahasa pemrograman lain dan juga belajar di bagian frontend selain
+          dari html dan css dasar seperti belajar framework react dan lainnya.
+        </p>
+        <div
+          class="mt-8 flex flex-wrap justify-center md:justify-start space-x-6"
+        >
+          <i class="fab fa-html5 fa-2x"></i>
+          <i class="fab fa-css3-alt fa-2x"></i>
+          <i class="fab fa-js fa-2x"></i>
+          <i class="fab fa-node fa-2x"></i>
+          <i class="fab fa-laravel fa-2x"></i>
+          <i class="fab fa-bootstrap fa-2x"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M18 13c-1.858 0-3.489-1.297-5.748-3.092C10.731 8.699 7.246 8.289 6.7 8.714L5.293 7.293C7.346 5.239 8.586 4 11 4c3.018 0 5.214 1.688 6.979 3.046.554.425 1.077.827 1.527 1.092.342.201 1.073.436 1.685.253.391-.115.689-.39.914-.838l1.834.789C22.879 11.259 20.659 13 18 13zM8.983 6.633c1.707.234 3.512.913 4.514 1.709C15.632 10.04 16.894 11 18 11c.745 0 1.435-.207 2.042-.599-.611-.097-1.158-.31-1.548-.539-.557-.328-1.128-.767-1.732-1.231C15.156 7.397 13.337 6 11 6 10.214 6 9.641 6.176 8.983 6.633zM13 20c-1.858 0-3.489-1.297-5.748-3.092C5.732 15.7 2.246 15.287 1.7 15.714l-1.407-1.421C2.346 12.239 3.586 11 6 11c3.018 0 5.214 1.688 6.979 3.046.554.425 1.077.827 1.527 1.092.342.201 1.073.433 1.685.253.391-.115.689-.39.914-.838l1.834.789C17.879 18.259 15.659 20 13 20zM3.983 13.633c1.707.234 3.512.913 4.514 1.709C10.632 17.04 11.894 18 13 18c.745 0 1.435-.207 2.042-.599-.611-.097-1.158-.31-1.548-.539-.557-.328-1.128-.767-1.732-1.231C10.156 14.397 8.337 13 6 13 5.214 13 4.641 13.176 3.983 13.633z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="34"
+            height="34"
+            viewBox="0 0 48 48"
+          >
+            <linearGradient
+              id="Xfeb2ANkiLrn2PxL5jJHLa_PZQVBAxaueDJ_gr1"
+              x1="3.851"
+              x2="34.471"
+              y1="2.596"
+              y2="33.216"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#6d7479"></stop>
+              <stop offset="1" stop-color="#323538"></stop>
+            </linearGradient>
+            <path
+              fill="url(#Xfeb2ANkiLrn2PxL5jJHLa_PZQVBAxaueDJ_gr1)"
+              d="M33.244,25l-9.121-12h1.18c0.84,0,1.631,0.392,2.139,1.061l7.059,9.287l7.059-9.287	C42.067,13.392,42.858,13,43.698,13h1.18l-9.121,12l9.547,12.56h-1.18c-0.84,0-1.631-0.392-2.139-1.061L34.5,26.652l-7.485,9.847	c-0.508,0.668-1.299,1.061-2.139,1.061h-1.18L33.244,25z M4,26v0.783c0,4.199,2.776,8.032,6.868,8.972	c4.439,1.02,8.49-1.247,10.228-4.842C21.366,30.355,21.928,30,22.547,30h1.028c-1.319,4.655-5.616,8.059-10.707,7.999	C6.777,37.927,2,32.694,2,26.142V26v-2l0-0.716c0-5.427,3.812-10.273,9.171-11.136C18.055,11.039,24,16.325,24,23v3H4z M4,24h18v-1	c0-5.648-5.202-10.08-11.076-8.768C6.804,15.153,4,19.002,4,23.71V24z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-24">
+      <div class="container mx-auto px-4 md:px-44">
+        <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">
+          Projects
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">WatcHGoods</h3>
+            <p class="text-gray-600 mb-4 flex-grow">
+              WatcHGoods adalah koleksi jam tangan mewah bekas terbesar yang
+              terverifikasi keasliannya. Sebagai web designer, saya ditugaskan
+              untuk mendesain prototipe situs web mereka. WatcHGoods merupakan
+              project saya pada semester 2 menggunakan HTML, CSS, & JS.
+            </p>
+            <a
+              href="https://groofy10.github.io/WatcHGoods/"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+              >View</a
+            >
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">
+              Web Contact App
+            </h3>
+            <p class="text-gray-600 mb-4 flex-grow">
+              Web aplikasi ini saya buat untuk belajar framework express.js.
+              Aplikasi web contact sederhana menggunakan Express.js, EJS, dan
+              MongoDB. Fitur CRUD memungkinkan pengguna untuk menambahkan,
+              mengedit, dan menghapus kontak.
+            </p>
+            <a
+              href="https://contact-app-sage-gamma.vercel.app/"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+              >View</a
+            >
+          </div>
+
+          <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Climates</h3>
+            <p class="text-gray-600 mb-4 flex-grow">
+              Climates adalah platform di Indonesia yang menyediakan kesempatan
+              relawan dan informasi tentang proyek serta kegiatan sosial di
+              berbagai daerah. Climates merupakan project saya pada semester 5
+              menggunakan Laravel.
+            </p>
+            <a
+              href="https://github.com/Groofy10/climates"
+              target="_blank"
+              class="text-blue-600 hover:underline"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-gray-100">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+        <div class="flex justify-center">
+          <form
+            class="w-full max-w-lg bg-white shadow-md rounded mx-4 px-8 pt-6 pb-8 mb-4"
+          >
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="name"
+              >
+                Name
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="name"
+                type="text"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="email"
+              >
+                Email
+              </label>
+              <input
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="email"
+                type="email"
+                placeholder="Your Email"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                class="block text-gray-700 text-sm font-bold mb-2"
+                for="message"
+              >
+                Message
+              </label>
+              <textarea
+                class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id="message"
+                rows="4"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div class="flex items-center justify-center">
+              <button
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gradient-to-r from-gray-900 to-black text-white py-8">
+      <div class="container mx-auto text-center">
+        <div class="mb-4 flex space-x-6 justify-center">
+          <a href="#home" class="text-gray-300 hover:text-white font-semibold"
+            >Home</a
+          >
+          <a href="#about" class="text-gray-300 hover:text-white font-semibold"
+            >About</a
+          >
+          <a
+            href="#projects"
+            class="text-gray-300 hover:text-white font-semibold"
+            >Projects</a
+          >
+          <a
+            href="#contact"
+            class="text-gray-300 hover:text-white font-semibold"
+            >Contact</a
+          >
+        </div>
+        <div class="flex justify-center mb-4">
+          <a
+            href="#"
+            class="mx-4 text-gray-300 hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-instagram fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="mx-4 text-gray-300 hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-linkedin fa-lg"></i>
+          </a>
+          <a
+            href="#"
+            class="mx-4 text-gray-300 hover:text-white transition-colors duration-300"
+          >
+            <i class="fab fa-github fa-lg"></i>
+          </a>
+        </div>
+        <p class="mb-4">
+          &copy; 2024 Ferdy Jonathan Angwijaya. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburger.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
